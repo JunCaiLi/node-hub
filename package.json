@@ -1,0 +1,21 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "```\r nodeProject\r ├─ .env\r ├─ package-lock.json\r └─ src\r    ├─ app\r    │  ├─ config.js\r    │  ├─ database.js\r    │  ├─ error-handle.js\r    │  └─ index.js\r    ├─ constant\r    │  └─ errorType.js\r    ├─ controller\r    │  └─ user.controller.js\r    ├─ main.js\r    ├─ middleware\r    │  └─ user.middleware.js\r    ├─ router\r    │  └─ user.router.js\r    ├─ service\r    │  └─ user.service.js\r    └─ utils",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
