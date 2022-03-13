@@ -28,6 +28,12 @@ class CommentController {
     const result = await service.deleteComment(commentId);
     ctx.body = result;
   }
+
+  async commentList(ctx, next) {
+    const { momentId } = ctx.query
+    const result = await service.getCommentByMomentId(momentId);
+    ctx.body = result;
+  }
 }
 
 module.exports = new CommentController();
