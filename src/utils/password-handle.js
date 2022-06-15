@@ -5,5 +5,5 @@ const md5password = (password) => {
   const result = md5.update(password).digest('hex');
   return result
 }
-
+// test
 module.exports = md5password
